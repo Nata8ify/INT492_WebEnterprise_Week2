@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Insert title here</title>
+</head>
+<body>
+	<fieldset>
+		<legend>Create</legend>
+		<form action="/account/update" method="post">
+			<input name="id" type="hidden" th:value="${account.id}"/>
+			Name : <input name="name" type="text" th:value="${account.name}" /><br/><br/>
+			<input type="submit" />
+		</form>
+	</fieldset>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head xmlns:th="http://www.thymeleaf.org">
+<meta charset="ISO-8859-1"/>
+<title>Insert title here</title>
+</head>
+<body>
+	<ul th:each="account : ${list}">
+		<li><b th:text="${account.id}"></b> : <i th:text="${account.name}"></i> <a th:href="'/account/update/'+${account.id}+'?form'" href="#">Update</a> <a th:href="'/account/delete/'+${account.id}" href="#">Delete</a></li>
+	</ul>
+	<a href="create?form">New</a>
+</body>
+</html>
